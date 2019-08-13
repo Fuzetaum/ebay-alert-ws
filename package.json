@@ -1,0 +1,16 @@
+{
+  "name": "ebay-alert-ws",
+  "version": "0.0.1",
+  "description": "eBay alert configuration web service",
+  "author": "Ricardo Fuzeto",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.0"
+  }
+}
