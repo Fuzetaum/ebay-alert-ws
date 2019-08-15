@@ -1,6 +1,11 @@
 require('dotenv').config();
 const express = require('express');
-const { createAlert, getAlerts, updateAlert } = require('./db/db');
+const {
+  connect,
+  createAlert,
+  getAlerts,
+  updateAlert,
+} = require('./db/db');
 
 const app = express();
 app.use(express.json());
@@ -28,5 +33,6 @@ app.post('/alert', (req, res) => {
   });
 });
 
+connect();
 app.listen(3000);
 console.log('App is up, listening on port 3000');
